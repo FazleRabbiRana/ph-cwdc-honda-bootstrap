@@ -24,6 +24,10 @@ body {
 	color: var(--honda-clr-gray);
 }
 
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 600;
 }
@@ -181,17 +185,15 @@ main > section + section {
 #site_header {
 	background: #264653;
 	color: #fff;
-	padding: 150px 0 90px;
+	padding: 30px 0;
+	margin-bottom: 60px;
 }
 
 /**
 * Navbar
 */
 #site_header .navbar {
-	position: fixed;
-	top: 30px;
-	left: 0;
-	background: #264653;
+	background: transparent;
 }
 
 .navbar-nav li + li {
@@ -200,4 +202,77 @@ main > section + section {
 
 .navbar-nav li:last-child {
 	margin-left: 100px;
+}
+
+/**
+* Banner/Hero section
+*/
+.banner-section {
+	padding: 70px 0;
+}
+
+.banner-image {
+	background-image: url(../images/dotted-object.png);
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: calc(100% - 15px) 10%;
+}
+
+
+
+/* -------------------------
+ * RESPONSIVE STYLE
+------------------------- */
+/**
+* Large devices (desktops, less than 1200px)
+*/
+@media (max-width: 1199.98px) {
+    
+}
+
+/**
+* Medium devices - Tablet layout (tablets, less than 992px)
+*/
+@media (max-width: 991.98px) {
+	
+}
+
+/**
+* Small devices - Mobile layout (landscape phones, less than 768px)
+*/
+@media (max-width: 767.98px) {
+	main > section + section {
+		margin-top: 70px;
+	}
+
+	.section-heading {
+		margin-bottom: 40px;
+	}
+
+	.section-title {
+		font-size: 36px;
+	}
+
+	#site_header {
+		margin-bottom: 100px;
+	}
+
+	.banner-section {
+		padding: 40px 0 0;
+	}
+
+	.banner-image {
+		background-image: none;
+	}
+
+	.banner-text .section-subtitle {
+		font-size: 16px;
+	}
+}
+
+/**
+* Extra small devices (portrait phones, less than 576px)
+*/
+@media (max-width: 575.98px) {
+    
 }
