@@ -1,0 +1,203 @@
+/* -------------------------
+ * General style
+------------------------- */
+:root {
+	--honda-clr-primary: #E76F51;
+	--honda-clr-gray: #6C6C6C;
+	--honda-clr-dark: #383838;
+	--honda-clr-darker: #252B42;
+	--honda-clr-blue: #23A6F0;
+	--honda-font-primary: 'Poppins', sans-serif;
+	--honda-font-secondary: 'Inter', sans-serif;
+	--honda-font-footer: 'Manrope', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--honda-font-primary);
+	line-height: 1.6;
+	color: var(--honda-clr-gray);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+}
+
+a, button {
+	display: inline-block;
+	font-weight: 500;
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+a:hover, button:hover {
+	color: var(--honda-clr-primary);
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+main > section + section {
+	margin-top: 160px;
+}
+
+
+
+/* -------------------------
+ * Common custom class style
+------------------------- */
+/* font family */
+.honda-font-primary {
+	font-family: var(--honda-font-primary);
+}
+
+.honda-font-secondary {
+	font-family: var(--honda-font-secondary);
+}
+
+.honda-font-footer {
+	font-family: var(--honda-font-footer);
+}
+
+/* text color */
+.honda-text-primary {
+	color: var(--honda-clr-primary);
+}
+
+.honda-text-gray {
+	color: var(--honda-clr-gray);
+}
+
+.honda-text-dark {
+	color: var(--honda-clr-dark);
+}
+
+.honda-text-darker {
+	color: var(--honda-clr-darker);
+}
+
+.honda-text-blue {
+	color: var(--honda-clr-blue);
+}
+
+/* font weight */
+.honda-font-300 {
+	font-weight: 300;
+}
+
+.honda-font-400 {
+	font-weight: 400;
+}
+
+.honda-font-500 {
+	font-weight: 500;
+}
+
+.honda-font-600 {
+	font-weight: 600;
+}
+
+/* section heading */
+.section-heading {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.section-title {
+	font-size: 48px;
+	text-transform: capitalize;
+}
+
+.section-subtitle {
+	font-size: 14px;
+}
+
+.section-subtitle.underlined {
+	position: relative;
+	padding-bottom: 1px;
+}
+
+.section-subtitle.underlined::after {
+	width: 60px;
+	height: 1px;
+	background-color: var(--honda-clr-primary);
+	position: absolute;
+	top: calc(100% + 1px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* button */
+.honda-btn-primary {
+	border: 1px solid var(--honda-clr-primary);
+	background-color: var(--honda-clr-primary);
+	color: #fff;
+	padding: 15px;
+	border-radius: 5px;
+	text-transform: capitalize;
+}
+
+.honda-btn-primary.btn-short {
+	padding: 10px 24px;
+}
+
+.honda-btn-primary.btn-wide {
+	padding: 10px 44px;
+}
+
+.honda-btn-primary.bordered {
+	background-color: transparent;
+	color: var(--honda-clr-primary);
+}
+
+.honda-btn-primary:hover {
+	background-color: transparent;
+	color: var(--honda-clr-primary);
+}
+
+.honda-btn-primary.bordered:hover {
+	background-color: var(--honda-clr-primary);
+	color: #fff;
+}
+
+
+
+/* -------------------------
+ * Header
+------------------------- */
+#site_header {
+	background: #264653;
+	color: #fff;
+	padding: 150px 0 90px;
+}
+
+/**
+* Navbar
+*/
+#site_header .navbar {
+	position: fixed;
+	top: 30px;
+	left: 0;
+	background: #264653;
+}
+
+.navbar-nav li + li {
+	margin-left: 36px;
+}
+
+.navbar-nav li:last-child {
+	margin-left: 100px;
+}
